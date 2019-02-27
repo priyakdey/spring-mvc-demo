@@ -1,0 +1,9 @@
+.classpath
+.project
+.DS_Store
+.eclipse-pmd
+.tern-project
+.settings/
+.vscode/
+target/
+*.war

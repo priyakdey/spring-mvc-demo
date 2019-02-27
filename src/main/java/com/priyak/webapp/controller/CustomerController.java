@@ -40,13 +40,6 @@ public class CustomerController {
 	public String welcomeCustomer(@Valid @ModelAttribute("customer") Customer customer,
 			BindingResult bindingResult) {
 	
-		if(customer.getLastName().equals(null)) {
-			System.out.println("Null");
-		}
-		else {
-			System.out.println("LastName : " + customer.getLastName());
-		}
-	
 		if(bindingResult.hasErrors()) {
 			return "customer-login-form";
 		}

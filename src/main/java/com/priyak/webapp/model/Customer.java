@@ -1,13 +1,15 @@
 package com.priyak.webapp.model;
 
-import javax.validation.constraints.NotEmpty;
+import javax.validation.constraints.NotNull;
+import javax.validation.constraints.Size;
 
 
 public class Customer {
 	
 	private String firstName;
 	
-	@NotEmpty
+	@NotNull(message="is required")
+	@Size(min=3, message="minimum 3 charcters to be entered")
 	private String lastName;
 	
 	public String getFirstName() {
